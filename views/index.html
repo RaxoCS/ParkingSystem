@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Estacionamiento</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Sistema de Estacionamiento</h1>
+  <section>
+    <h2>Agregar Auto</h2>
+    <form action="/entrada/registrar" method="POST">
+      <label for="placa">Número de Placa:</label>
+      <input type="text" id="placa" name="placa" required>
+      <label for="tipo">Tipo de Auto:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="residente">Residente</option>
+        <option value="no residente">No Residente</option>
+        <option value="oficial">Oficial</option>
+      </select>
+      <button type="submit">Agregar Auto</button>
+    </form>
+  </section>
+  <section>
+    <h2>Registrar Salida</h2>
+    <form action="/salida/registrar" method="POST">
+      <label for="placaSalida">Número de Placa:</label>
+      <input type="text" id="placaSalida" name="placa" required>
+      <button type="submit">Registrar Salida</button>
+    </form>
+  </section>
+  <section>
+    <h2>Generar Reporte</h2>
+    <form action="/reportes" method="GET">
+      <label for="fecha_inicio">Fecha Inicio:</label>
+      <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+      <label for="fecha_fin">Fecha Fin:</label>
+      <input type="date" id="fecha_fin" name="fecha_fin" required>
+      <label for="formato">Formato:</label>
+      <select id="formato" name="formato" required>
+        <option value="pdf">PDF</option>
+        <option value="excel">Excel</option>
+      </select>
+      <button type="submit">Generar Reporte</button>
+    </form>
+  </section>
+</body>
+</html>
