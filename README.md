@@ -40,7 +40,7 @@ Para usar MySQL sigue estos pasos:
 
     - Ve al Admin de MySQL para crear la base de datos
 
-## Creacion de la base de datos
+## Creación de la base de datos
 
 Para crear la base de datos sigue estos pasos:
 
@@ -67,7 +67,7 @@ Para crear la base de datos sigue estos pasos:
         FOREIGN KEY (auto_id) REFERENCES auto(id_auto)
     );
 
-2. **Verifica que el archivo database.js esten los detalles de tu BD
+2. Verifica que el archivo database.js estén los detalles de tu BD
 
     ```bash
     const { Sequelize } = require('sequelize');
@@ -82,11 +82,10 @@ Para crear la base de datos sigue estos pasos:
     module.exports = { sequelize };
 
 
-## Iniciar la aplicacion
+## Iniciar la aplicación
 
-Ya que se tenga todas las dependencias y base de datos puedes iniciar la aplicacion
+Ya que se tenga todas las dependencias y base de datos puedes iniciar la aplicación
 
-    ```bash
     node app.js
 
 Y visita http://localhost:3000 para acceder a la interfaz de la aplicación.
